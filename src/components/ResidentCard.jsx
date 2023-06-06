@@ -12,7 +12,7 @@ const ResidentCard = ({url}) => {
   return (
     <article className="resident">
         <header className="resident__header">
-            <img className="resident__img" src={resident?.image} alt="" />
+            <img src={resident?.image} alt="" />
             <div className="resident__status">
                 <span className={`resident__circle ${resident?.status}`}></span>
                 <span>{resident?.status}</span>
@@ -22,9 +22,9 @@ const ResidentCard = ({url}) => {
             <h3 className="resident__name">{resident?.name}</h3>
             <hr className="resident__hr"/>
             <ul className="resident__list">
-                <li className="resident__item"><span className="resident__label">Specie: </span><span className="resident__value">{resident?.species}</span></li>
-                <li className="resident__item"><span className="resident__label">Origin: </span><span className="resident__value">{resident?.origin.name}</span></li>
-                <li className="resident__item"><span className="resident__label">Episodes: </span><span className="resident__value">{resident?.episode.length}</span></li>
+                <li><span className="resident__label">Specie: </span>{resident?.species}</li>
+                <li><span className="resident__label">Origin: </span>{resident?.origin.name}</li>
+                <li><span className="resident__label">Episodes: </span>{resident?.episode.length}</li>
             </ul>
         </section>
     </article>

@@ -69,6 +69,10 @@ button {
 }
 
 @media (min-width: 700px) {
+
+    .banner__img {
+        height: 190px;
+    }
     .main__title {
         text-align: center;
         font-size: 3.2rem;
@@ -83,7 +87,14 @@ button {
     }
 
     .card {
-        margin-left: 40%;
+        margin-left: 31%;
+        width: 490px;
+    }
+
+    .card__info {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
     }
 
     .title__error {
